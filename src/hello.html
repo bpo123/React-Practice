@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Namaste ReactJs</title>
+</head>
+<body>
+    <div id ="root"></div>
+<!--  //javascript hello world
+
+         const heading = document.createElement("h1");
+         heading.innerHTML = ("hello javascript world!!");
+         const root = document.getElementById("root");
+         root.appendChild(heading); -->
+
+        <script crossorigin
+         src="https://unpkg.com/react@18/umd/react.development.js"> // this links refers core file of react
+         </script>
+
+        <script crossorigin 
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">// this link refers dom elements of react,connects React to the browser's DOM
+        </script>
+
+        <script src = "./App.js">
+            //reactJs Helloworld
+            //  const heanding = React.createElement("h1", {}, "hello world from ReactJS");
+             
+            //  const root = ReactDOM.createRoot(document.getElementById("root"));
+
+            //  root.render(heanding)
+
+        </script>
+   
+</body>
+</html>
+
+<!-- Notes: javascript hello world
+This JavaScript script dynamically creates an <h1> HTML element, 
+sets its inner content to "hello javascript world!!",
+and then appends this heading element to an existing HTML <div> element as a child with the ID root.
+When the script runs in a browser, it searches the document for an element with id="root" and 
+injects the newly created <h1> element inside it. 
+As a result, the output displayed on the webpage will be a large heading that reads:
+ -->
+
+ <!-- Notes: Reactjs hello world
+ The above script uses React to dynamically create and render a heading element on a web page. 
+ It first creates a React element heanding using React.createElement, specifying an <h1> tag and {} means gives attributes ex:id:heading to the tag and the text content "hello world from ReactJS". 
+Then, it gets a reference to the HTML element with the ID root and creates a React root using ReactDOM.createRoot, which is part of React 18's new concurrent rendering API.
+ Finally, it renders the heanding React element inside the root element on the page. 
+ As a result, the webpage will display a large heading that says: hello world from ReactJS. -->
